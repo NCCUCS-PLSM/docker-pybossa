@@ -7,8 +7,8 @@ RUN easy_install pip
 RUN git clone --recursive https://github.com/PyBossa/pybossa /pybossa
 WORKDIR pybossa
 
-ADD ./settings_local.py ./settings_local.py
-ADD ./alembic.ini ./alembic.ini
+#ADD ./settings_local.py ./settings_local.py
+#ADD ./alembic.ini ./alembic.ini
 
 RUN pip install -U pip
 RUN pip install -r ./requirements.txt
